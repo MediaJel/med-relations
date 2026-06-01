@@ -1,0 +1,139 @@
+{
+  "week": "2026-W22",
+  "period": "2026-05-25 → 2026-05-31",
+  "stats": {
+    "prs": 8,
+    "linesAdded": 352,
+    "linesRemoved": 87,
+    "hotfixes": 6
+  },
+  "chart": {
+    "bugCount": 8,
+    "featCount": 0,
+    "enhCount": 0
+  },
+  "priorityChart": {
+    "critCount": 6,
+    "highCount": 0,
+    "normCount": 2,
+    "lowCount": 0
+  },
+  "prs": [
+    {
+      "title": "Intermittent trouble logging in (A lingering issue)",
+      "url": "https://github.com/MediaJel/mediajel-dashboard/pull/11402",
+      "category": "bug",
+      "priority": "critical",
+      "linesAdded": 124,
+      "linesRemoved": 19
+    },
+    {
+      "title": "The campaign order details",
+      "url": "https://github.com/MediaJel/mediajel-gql-service/pull/7525",
+      "category": "bug",
+      "priority": "critical",
+      "linesAdded": 15,
+      "linesRemoved": 0
+    },
+    {
+      "title": "Paid Search Prisma6 missing chart",
+      "url": "https://github.com/MediaJel/mediajel-gql-service/pull/7540",
+      "category": "bug",
+      "priority": "critical",
+      "linesAdded": 19,
+      "linesRemoved": 6
+    },
+    {
+      "title": "Unable to Launch/Save campaign (Defensive Coding)",
+      "url": "https://github.com/MediaJel/mediajel-dashboard/pull/11415",
+      "category": "bug",
+      "priority": "critical",
+      "linesAdded": 158,
+      "linesRemoved": 8
+    },
+    {
+      "title": "Scope campaigns query by org id instead of name",
+      "url": "https://github.com/MediaJel/mediajel-dashboard/pull/11421",
+      "category": "bug",
+      "priority": "normal",
+      "linesAdded": 16,
+      "linesRemoved": 22
+    },
+    {
+      "title": "Scope rollup display query by org id instead of name",
+      "url": "https://github.com/MediaJel/mediajel-gql-service/pull/7549",
+      "category": "bug",
+      "priority": "normal",
+      "linesAdded": 8,
+      "linesRemoved": 8
+    },
+    {
+      "title": "Add an ability to set same start date and due date",
+      "url": "https://github.com/MediaJel/mediajel-dashboard/pull/11431",
+      "category": "bug",
+      "priority": "critical",
+      "linesAdded": 11,
+      "linesRemoved": 13
+    },
+    {
+      "title": "Hotfix/beacon creation",
+      "url": "https://github.com/MediaJel/amplication-nestjs-microservices/pull/2249",
+      "category": "bug",
+      "priority": "critical",
+      "linesAdded": 1,
+      "linesRemoved": 11
+    }
+  ],
+  "contributors": [
+    {
+      "name": "ramzell",
+      "url": "https://github.com/ramzell",
+      "prs": 3,
+      "critical": 3,
+      "high": 0,
+      "normal": 0,
+      "low": 0,
+      "linesAdded": 293,
+      "linesRemoved": 40
+    },
+    {
+      "name": "icarlofer",
+      "url": "https://github.com/icarlofer",
+      "prs": 2,
+      "critical": 0,
+      "high": 0,
+      "normal": 2,
+      "low": 0,
+      "linesAdded": 24,
+      "linesRemoved": 30
+    },
+    {
+      "name": "johnjoseph28",
+      "url": "https://github.com/johnjoseph28",
+      "prs": 2,
+      "critical": 2,
+      "high": 0,
+      "normal": 0,
+      "low": 0,
+      "linesAdded": 34,
+      "linesRemoved": 6
+    },
+    {
+      "name": "pacholoamit",
+      "url": "https://github.com/pacholoamit",
+      "prs": 1,
+      "critical": 1,
+      "high": 0,
+      "normal": 0,
+      "low": 0,
+      "linesAdded": 1,
+      "linesRemoved": 11
+    }
+  ],
+  "metrics": {
+    "mostActiveRepo": "mediajel-dashboard",
+    "avgPrSize": 55,
+    "revertCount": 0,
+    "prVelocity": 1.14
+  }
+}
