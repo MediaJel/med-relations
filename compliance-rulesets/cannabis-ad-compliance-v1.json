@@ -1,0 +1,136 @@
+{
+  "rulesetId": "cannabis-ad-compliance-v1",
+  "domain": "cannabis_marijuana_advertising",
+  "version": 1,
+  "confidenceThreshold": 0.75,
+  "rules": [
+    {
+      "id": "no-minor-appeal-imagery",
+      "title": "No imagery appealing to minors",
+      "severity": "critical",
+      "checkPrompt": "Does this image contain cartoons, characters, mascots, or imagery styles that would reasonably appeal to minors (e.g. bright cartoon mascots, toy-like packaging, candy-like branding)? Answer strictly based on what is visibly depicted.",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Remove cartoon/minor-appealing elements; use adult-oriented imagery and styling."
+    },
+    {
+      "id": "no-depiction-of-minors",
+      "title": "No persons who appear to be minors depicted",
+      "severity": "critical",
+      "checkPrompt": "Does this image depict any person who reasonably appears to be under the age of 21, whether or not they are interacting with the product?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Remove or replace any model/person who appears to be under 21 with a model who clearly appears to be an adult."
+    },
+    {
+      "id": "no-underage-appearing-models-with-product",
+      "title": "No apparently underage models shown using or holding product",
+      "severity": "critical",
+      "checkPrompt": "Is any person who appears to be under 21 shown holding, using, or in close proximity to a cannabis product or paraphernalia in this image?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Ensure all models depicted with product visibly and unambiguously appear to be adults (25+ recommended for safety margin)."
+    },
+    {
+      "id": "required-disclaimer-present",
+      "title": "Required disclaimer text present and legible",
+      "severity": "critical",
+      "checkPrompt": "Is a legible warning/disclaimer statement visible in the image, consistent with typical state cannabis-ad disclaimer requirements (e.g. age restriction such as '21+ only', health warning, or 'keep out of reach of children')?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Add the required disclaimer text (e.g. age-restriction and health-warning language) in a legible, high-contrast placement."
+    },
+    {
+      "id": "disclaimer-legibility",
+      "title": "Disclaimer text meets legibility/contrast expectations",
+      "severity": "major",
+      "checkPrompt": "If disclaimer or warning text is present, is it rendered at a size and contrast that a typical viewer could read it without difficulty (not obscured, not low-contrast, not cropped)?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Increase disclaimer text size/contrast and ensure it is not cropped, obscured, or placed over a busy background."
+    },
+    {
+      "id": "no-unsubstantiated-health-claims",
+      "title": "No unsubstantiated health/medical claims depicted",
+      "severity": "major",
+      "checkPrompt": "Does the image depict or imply medical/health claims (e.g. 'cures', 'treats', 'heals') about cannabis products without qualification or supporting disclosure?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Remove or qualify health-claim imagery/text; consult legal before using any medical or therapeutic claims."
+    },
+    {
+      "id": "no-therapeutic-necessity-claims",
+      "title": "No claims implying cannabis is a necessary treatment or cure",
+      "severity": "major",
+      "checkPrompt": "Does the image or any visible text imply that cannabis use is medically necessary, a required treatment, or a substitute for professional medical care?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Remove language/imagery implying medical necessity; add a qualifying disclaimer if any wellness framing is retained."
+    },
+    {
+      "id": "no-unsubstantiated-safety-claims",
+      "title": "No unsubstantiated safety claims",
+      "severity": "major",
+      "checkPrompt": "Does the image or visible text claim the product is 'safe', 'risk-free', 'non-addictive', or otherwise make an absolute safety claim without qualification?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Remove absolute safety language; use qualified, non-absolute wording or remove the claim entirely."
+    },
+    {
+      "id": "no-potency-dosage-overstatement",
+      "title": "No exaggerated or promotional potency/dosage claims",
+      "severity": "major",
+      "checkPrompt": "Does the image feature potency or dosage claims (e.g. THC/CBD percentages, 'strongest', 'guaranteed high') presented as a promotional selling point rather than neutral product information?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Present potency/dosage figures as neutral factual labeling only, not as a promotional claim or superlative."
+    },
+    {
+      "id": "no-thc-content-as-primary-selling-point",
+      "title": "THC/potency content not used as the primary marketing hook",
+      "severity": "minor",
+      "checkPrompt": "Is a specific THC or potency number displayed as the dominant, largest, or most prominent element of the creative, functioning as the main selling point?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "De-emphasize potency figures relative to brand/product name; avoid making THC content the visual focal point."
+    },
+    {
+      "id": "no-consumption-imagery",
+      "title": "No imagery of a person actively consuming cannabis",
+      "severity": "major",
+      "checkPrompt": "Does the image depict a person actively smoking, vaping, inhaling, or otherwise consuming a cannabis product (as opposed to simply holding or displaying it)?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Replace consumption imagery with product-display-only imagery (packaging, product shot without active use)."
+    },
+    {
+      "id": "no-excessive-consumption-imagery",
+      "title": "No imagery suggesting excessive or binge consumption",
+      "severity": "minor",
+      "checkPrompt": "Does the image depict large quantities of product being consumed or imply encouragement of excessive/binge use (e.g. many products consumed at once, 'party' overconsumption framing)?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Reduce quantity/framing to a single, moderate serving and remove overconsumption cues."
+    },
+    {
+      "id": "no-hazardous-activity-depicted",
+      "title": "No depiction of use while driving or operating machinery",
+      "severity": "major",
+      "checkPrompt": "Does the image depict a person using cannabis while driving a vehicle or operating machinery/equipment, or otherwise associate product use with a hazardous activity?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Remove any association between product use and driving, operating machinery, or other hazardous activities."
+    },
+    {
+      "id": "no-child-appealing-packaging-branding",
+      "title": "No packaging/branding resembling children's products",
+      "severity": "critical",
+      "checkPrompt": "Does the product packaging or branding shown resemble candy, snacks, or other children's products/brands in shape, color scheme, or naming?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Redesign packaging/branding to avoid resemblance to candy, snack, or children's product conventions."
+    },
+    {
+      "id": "no-price-discount-inducement-imagery",
+      "title": "No imagery encouraging overconsumption via price/promotion framing",
+      "severity": "minor",
+      "checkPrompt": "Does the image feature 'free', 'buy one get one', bulk-discount, or giveaway framing that could reasonably encourage purchasing or consuming more product than intended?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Remove or reword promotional framing so it does not incentivize bulk purchase or overconsumption."
+    },
+    {
+      "id": "license-number-disclosure-present",
+      "title": "State license number disclosure present where required",
+      "severity": "minor",
+      "checkPrompt": "If this creative is a storefront, dispensary, or licensed-retailer advertisement, is a state cannabis business license number or equivalent regulatory identifier visible in the image?",
+      "citation": "Drafted from publicly available state cannabis-advertising regulations — not yet legal-reviewed.",
+      "suggestedFixTemplate": "Add the applicable state license number in a legible location on the creative."
+    }
+  ]
+}
